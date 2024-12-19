@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template, request
 from azure.monitor.opentelemetry import configure_azure_monitor
 
 app = Flask(__name__)
