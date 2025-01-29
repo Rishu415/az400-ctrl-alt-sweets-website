@@ -8,8 +8,8 @@ app = Flask(__name__)
 # APPLICATIONINSIGHTS_CONNECTION_STRING in the environment if not specified.
 # By enabling live metrics, you get real-time analytics.
 configure_azure_monitor(
-    connection_string="<your-connection-string>",
     enable_live_metrics=True
+    # No need to pass connection_string here as it will be taken from env var
 )
 
 @app.route("/")
