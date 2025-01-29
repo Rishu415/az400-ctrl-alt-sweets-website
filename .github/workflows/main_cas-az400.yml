@@ -77,7 +77,7 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'cas-az400'
-          slot-name: 'Production' 
+          slot-name: 'Production'
           app-settings: |
             APPLICATIONINSIGHTS_CONNECTION_STRING=${{ secrets.APPINSIGHTS_CONNECTION_STRING }}
-         
+          
